@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.246">
-    <testcase classname="feature to test login functionality" name="Check login is sucessful with valid credentials" time="0.026">
-        <system-out>
-            <![CDATA[Given user is on login page.................................................passed
-When user enters username and password......................................passed
-And clicks on login button..................................................passed
-Then user is navigated to the home page.....................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.554">
+    <testcase classname="feature to test login functionality" name="Check login is sucessful with valid credentials" time="0.067">
+        <failure message="" type="java.lang.NullPointerException">
+            <![CDATA[Given user is on login page.................................................failed
+When user enters username and password......................................skipped
+And clicks on login button..................................................skipped
+Then user is navigated to the home page.....................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at StepDefinitions.LoginDemoStep_POM.user_is_on_login_page(LoginDemoStep_POM.java:31)
+	at ✽.user is on login page(file:///C:/Users/Shanj/eclipse-workspace/project_CC/src/test/resources/Feature/login.feature:10)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
